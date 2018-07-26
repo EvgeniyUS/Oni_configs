@@ -6,4 +6,4 @@ C:\Program Files (x86)\Oni\resources\app\vim\default\bundle\oni-vim-defaults\plu
 <br>
 <h3>oni config path:</h3>
 <br>
-C:\Users\us\AppData\Roaming\Oni\config.tsx
+C:\Users\<userName>\AppData\Roaming\Oni\config.tsx
