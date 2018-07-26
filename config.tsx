@@ -27,7 +27,7 @@ export const configuration = {
     "oni.loadInitVim": true,
 
     "ui.colorscheme": "onedark",
-    "tabs.mode": "buffers",
+    "tabs.mode": "native",
     "learning.enabled": false,
     "achievements.enabled": false,
     //"sidebar.enabled": false,
