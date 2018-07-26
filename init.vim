@@ -27,18 +27,21 @@ set autoindent
 set smartindent
 set wrap
 
+set splitright
+set splitbelow
+
 set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
 
 "set statusline=\ %{HasPaste()}%f%m%r%h%w\ %y(%{&fenc?&fenc:&enc})\ %=\CWD=%{getcwd()}\ %l/%L\ %p%%\ 
-"set statusline=\ %<%F%m%r%h%w\ %y\ %=\ %l/%L\ %p%%\ 
+" set statusline=\ %<%F%m%r%h%w\ %y\ %=\ %l/%L\ %p%%\ 
 set cursorcolumn
 set cursorline
 set hidden
 set backspace=indent,eol,start
-set mouse=c
+set mouse=a
 "set winwidth=90
 "set winheight=40
 let netrw_bufsettings="noma nomod nowrap nonu nornu ro nobl"
@@ -140,9 +143,9 @@ syntax enable
 let mapleader = "\<space>"
 noremap j gj
 noremap k gk
-nmap <F2> :set wrap!<cr>
+" nmap <F2> :set wrap!<cr>
 nmap <silent> <F4> :Vex<cr>
-nmap <F5> :!python3 %<cr>
+" nmap <F5> :!python3 %<cr>
 nmap <F6> :so $VIMRUNTIME/syntax/hitest.vim<cr>
 nmap <F7> :colorscheme pablo<cr>:set nocursorcolumn<cr>
 nmap <F8> :so %<cr><leader><cr>
@@ -160,9 +163,9 @@ nmap <leader>w :up<cr>
 nmap <Tab> :find 
 
 " Substitute current word/selection
-nmap <F3> viwy:%s/\<<C-R>"\>//g<Left><Left>
-vmap <F3> y:%s/<C-R>"//g<Left><Left>
-vmap <leader><F3> :s/\%V//g<Left><Left><Left>
+nmap <F5> viwy:%s/\<<C-R>"\>//g<Left><Left>
+vmap <F5> y:%s/<C-R>"//g<Left><Left>
+vmap <leader><F5> :s/\%V//g<Left><Left><Left>
 vmap <leader>/ "zy/<c-r>z<cr>
 
 " Moving selected lines up & down
